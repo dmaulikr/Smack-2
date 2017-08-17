@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2036E81A1F46245800F4DD9A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036E8191F46245800F4DD9A /* AuthService.swift */; };
 		2036E81C1F462F1B00F4DD9A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036E81B1F462F1B00F4DD9A /* RoundedButton.swift */; };
+		2036E81E1F463F5600F4DD9A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036E81D1F463F5600F4DD9A /* UserDataService.swift */; };
 		2041AF4A1F43D151009EC460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041AF491F43D151009EC460 /* AppDelegate.swift */; };
 		2041AF4F1F43D151009EC460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2041AF4D1F43D151009EC460 /* Main.storyboard */; };
 		2041AF511F43D151009EC460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2041AF501F43D151009EC460 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		2036E8191F46245800F4DD9A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2036E81B1F462F1B00F4DD9A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		2036E81D1F463F5600F4DD9A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		2041AF461F43D151009EC460 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2041AF491F43D151009EC460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2041AF4E1F43D151009EC460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				2036E8191F46245800F4DD9A /* AuthService.swift */,
+				2036E81D1F463F5600F4DD9A /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				2041AF661F44C7CC009EC460 /* ChannelVC.swift in Sources */,
 				2036E81C1F462F1B00F4DD9A /* RoundedButton.swift in Sources */,
 				2041AF641F44C7BB009EC460 /* ChatVC.swift in Sources */,
+				2036E81E1F463F5600F4DD9A /* UserDataService.swift in Sources */,
 				2041AF721F44EC65009EC460 /* CreateAccountVC.swift in Sources */,
 				2036E81A1F46245800F4DD9A /* AuthService.swift in Sources */,
 				2041AF701F44DF0F009EC460 /* LoginVC.swift in Sources */,
