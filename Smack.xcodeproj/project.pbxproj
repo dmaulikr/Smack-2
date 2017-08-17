@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2036E81A1F46245800F4DD9A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036E8191F46245800F4DD9A /* AuthService.swift */; };
 		2041AF4A1F43D151009EC460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041AF491F43D151009EC460 /* AppDelegate.swift */; };
 		2041AF4F1F43D151009EC460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2041AF4D1F43D151009EC460 /* Main.storyboard */; };
 		2041AF511F43D151009EC460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2041AF501F43D151009EC460 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2036E8191F46245800F4DD9A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2041AF461F43D151009EC460 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2041AF491F43D151009EC460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2041AF4E1F43D151009EC460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2036E8181F46243F00F4DD9A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2036E8191F46245800F4DD9A /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2041AF3D1F43D151009EC460 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		2041AF481F43D151009EC460 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				2036E8181F46243F00F4DD9A /* Services */,
 				2041AF6C1F44D92E009EC460 /* Utilities */,
 				2041AF621F44C7AC009EC460 /* Model */,
 				2041AF611F44C7A7009EC460 /* View */,
@@ -286,6 +297,7 @@
 				2041AF661F44C7CC009EC460 /* ChannelVC.swift in Sources */,
 				2041AF641F44C7BB009EC460 /* ChatVC.swift in Sources */,
 				2041AF721F44EC65009EC460 /* CreateAccountVC.swift in Sources */,
+				2036E81A1F46245800F4DD9A /* AuthService.swift in Sources */,
 				2041AF701F44DF0F009EC460 /* LoginVC.swift in Sources */,
 				2041AF6B1F44CFE0009EC460 /* SWRevealViewController.m in Sources */,
 				2041AF681F44CC2B009EC460 /* GradientView.swift in Sources */,
