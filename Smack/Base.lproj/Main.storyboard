@@ -206,6 +206,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="boc-MU-SxM" eventType="touchUpInside" id="PgQ-99-9na"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ags-Uc-brT">
                                 <rect key="frame" x="62" y="160" width="250" height="94"/>
@@ -246,22 +249,31 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DPQ-wZ-d5M">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tdR-cJ-cBt" firstAttribute="top" secondItem="vLu-xB-j7v" secondAttribute="bottom" id="4jC-fA-Y1B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kyE-hu-d3Q" secondAttribute="trailing" id="9ra-Ma-TYn"/>
+                            <constraint firstItem="DPQ-wZ-d5M" firstAttribute="centerY" secondItem="BZi-up-QHz" secondAttribute="centerY" constant="-100" id="ApU-hA-Hda"/>
                             <constraint firstItem="ags-Uc-brT" firstAttribute="top" secondItem="cVK-s3-Fbs" secondAttribute="bottom" constant="40" id="Fvb-SC-41M"/>
                             <constraint firstItem="cVK-s3-Fbs" firstAttribute="centerX" secondItem="BZi-up-QHz" secondAttribute="centerX" id="Jgz-7m-KvZ"/>
                             <constraint firstItem="kyE-hu-d3Q" firstAttribute="top" secondItem="Avh-VQ-sX9" secondAttribute="bottom" constant="8" id="R94-TF-liv"/>
                             <constraint firstItem="cVK-s3-Fbs" firstAttribute="top" secondItem="Avh-VQ-sX9" secondAttribute="bottom" constant="60" id="Tz1-pE-hqX"/>
                             <constraint firstItem="vLu-xB-j7v" firstAttribute="top" secondItem="ags-Uc-brT" secondAttribute="bottom" constant="40" id="bHn-5V-uUk"/>
                             <constraint firstItem="ags-Uc-brT" firstAttribute="centerX" secondItem="BZi-up-QHz" secondAttribute="centerX" id="eq3-f3-Z6E"/>
+                            <constraint firstItem="DPQ-wZ-d5M" firstAttribute="centerX" secondItem="BZi-up-QHz" secondAttribute="centerX" id="gnb-HS-UJT"/>
                             <constraint firstItem="vLu-xB-j7v" firstAttribute="centerX" secondItem="BZi-up-QHz" secondAttribute="centerX" id="imB-iP-cud"/>
                             <constraint firstItem="tdR-cJ-cBt" firstAttribute="centerX" secondItem="BZi-up-QHz" secondAttribute="centerX" id="sOg-lY-b3r"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="FqJ-9B-OKS" id="eno-yZ-UHY"/>
+                        <outlet property="spinner" destination="DPQ-wZ-d5M" id="KTY-PU-Rcr"/>
+                        <outlet property="usernameTxt" destination="Y8x-u4-vM8" id="3Y3-LC-lOh"/>
                         <segue destination="HS6-HS-E6v" kind="show" identifier="toCreateAccount" id="VKG-Zs-fWM"/>
                     </connections>
                 </viewController>
