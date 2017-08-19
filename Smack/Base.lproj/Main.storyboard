@@ -677,13 +677,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-iD-8gu">
+                                <rect key="frame" x="8" y="622" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8v2-uI-m1C" firstAttribute="centerY" secondItem="BPE-lo-vvF" secondAttribute="centerY" id="2HH-ec-lXG"/>
                             <constraint firstItem="BPE-lo-vvF" firstAttribute="leading" secondItem="4Vi-B7-XUG" secondAttribute="leading" id="5cp-ai-dGm"/>
+                            <constraint firstItem="67Q-iD-8gu" firstAttribute="leading" secondItem="4Vi-B7-XUG" secondAttribute="leading" constant="8" id="Ebo-h7-YmR"/>
                             <constraint firstAttribute="trailing" secondItem="v70-5G-NIH" secondAttribute="trailing" id="Gti-IW-kaE"/>
                             <constraint firstAttribute="trailing" secondItem="U2B-VF-HSU" secondAttribute="trailing" id="Inz-QI-MAo"/>
+                            <constraint firstItem="BPE-lo-vvF" firstAttribute="top" secondItem="67Q-iD-8gu" secondAttribute="bottom" constant="5" id="JOc-wG-ZAJ"/>
                             <constraint firstItem="BPE-lo-vvF" firstAttribute="top" secondItem="v70-5G-NIH" secondAttribute="bottom" constant="30" id="LP8-pd-2JN"/>
                             <constraint firstAttribute="trailing" secondItem="BPE-lo-vvF" secondAttribute="trailing" id="LmF-7H-mUa"/>
                             <constraint firstItem="Ulx-hS-vAs" firstAttribute="top" secondItem="BPE-lo-vvF" secondAttribute="bottom" id="YW7-Mr-1w9"/>
@@ -700,6 +708,7 @@
                         <outlet property="messageTxtBox" destination="BPE-lo-vvF" id="Aaq-0F-H5g"/>
                         <outlet property="sendBtn" destination="8v2-uI-m1C" id="vGs-08-EPU"/>
                         <outlet property="tableView" destination="v70-5G-NIH" id="QhW-8J-MpL"/>
+                        <outlet property="typingUsersLbl" destination="67Q-iD-8gu" id="MjF-Zc-CtW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7H-JT-UJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
