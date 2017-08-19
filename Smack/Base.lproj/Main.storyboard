@@ -77,7 +77,7 @@
                                 <rect key="frame" x="0.0" y="129.5" width="375" height="422.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Bty-zf-KpL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="Bty-zf-KpL" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bty-zf-KpL" id="Sxr-l8-Zmb">
@@ -97,6 +97,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="QYp-dZ-0oK" id="8TK-v5-GL8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -131,6 +134,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="ksl-K8-IOd" id="9kX-uN-QQ3"/>
+                        <outlet property="tableView" destination="lQz-ku-liC" id="daf-3n-qfS"/>
                         <outlet property="userImg" destination="iUh-mQ-Ecn" id="ObY-N1-KFX"/>
                         <segue destination="boc-MU-SxM" kind="show" identifier="toLogin" id="qJz-la-XRm"/>
                     </connections>
