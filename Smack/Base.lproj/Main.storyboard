@@ -607,6 +607,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="YdN-CM-5lo" eventType="editingChanged" id="dPt-Bj-NWm"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v2-uI-m1C">
                                 <rect key="frame" x="321" y="632" width="30" height="30"/>
@@ -695,6 +698,7 @@
                         <outlet property="channelNameLbl" destination="Hk8-JC-JCx" id="QBX-vG-vPo"/>
                         <outlet property="menuBtn" destination="Q9Z-Uu-Mhz" id="z5Y-hc-nbQ"/>
                         <outlet property="messageTxtBox" destination="BPE-lo-vvF" id="Aaq-0F-H5g"/>
+                        <outlet property="sendBtn" destination="8v2-uI-m1C" id="vGs-08-EPU"/>
                         <outlet property="tableView" destination="v70-5G-NIH" id="QhW-8J-MpL"/>
                     </connections>
                 </viewController>
